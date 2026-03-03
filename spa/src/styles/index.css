@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --primary-color: #1677ff;
+  --bg-color: #ffffff;
+  --border-color: #f0f0f0;
+  --text-secondary: #8c8c8c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", -apple-system, BlinkMacMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: rgba(0, 0, 0, 0.88);
+    -webkit-font-smoothing: antialiased;
+}
+
+.header {
+    background: #fff; 
+    padding: 0 24px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    height: 64px;
+}
+
+/* Sidebar Trigger Hover Effect */
+.sidebar-trigger {
+    padding: 8px;
+    border-radius: 6px;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-trigger:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+/* Remove default Ant Design Sider shadow/border if any */
+.ant-layout-sider {
+    border-right: 1px solid var(--border-color) !important;
+}
+
+.ant-layout-sider-children {
+    display: flex;
+    flex-direction: column;
+}
